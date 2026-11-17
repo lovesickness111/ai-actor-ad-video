@@ -1,0 +1,238 @@
+{
+  "title": "Example: car skit -> product card -> screen demo -> price -> CTA (fictional product HoaDonGo)",
+  "aspect": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "video": {
+    "provider": "grok",
+    "model": null,
+    "mode": "shots"
+  },
+  "voice": {
+    "mode": "native",
+    "tts": "xai",
+    "tts_speed": 1.3
+  },
+  "scene": "Inside a modern car on a sunny day, light beige leather seats, glass sunroof, green trees outside",
+  "characters": {
+    "a": {
+      "portrait": "characters/a-v1.png",
+      "describe": "fictional Vietnamese man about 32, navy polo shirt",
+      "voice_prompt": "Northern Vietnamese (Hanoi) male voice, about 32, mid-low pitch, clear",
+      "voices": {
+        "grok": "leo",
+        "xai": "leo",
+        "gemini": "Riko"
+      },
+      "caption": "yellow"
+    },
+    "b": {
+      "portrait": "characters/b-v1.png",
+      "describe": "fictional Vietnamese woman about 28, cream knit top",
+      "voice_prompt": "Northern Vietnamese (Hanoi) female voice, about 28, clear and light, slightly playful",
+      "voices": {
+        "grok": "eve",
+        "xai": "eve",
+        "gemini": "Kore"
+      },
+      "caption": "red"
+    }
+  },
+  "shots": [
+    {
+      "id": "s1",
+      "keyframe": "keyframes/s1-v1.png",
+      "seconds": 6,
+      "action": "The man on the right holds a phone to his ear, worried and hurried, nods and rubs his forehead; the woman on the left stops scrolling her phone and glances at him, puzzled.",
+      "lines": [
+        {
+          "who": "a",
+          "text": "Alo… Bên anh cần hóa đơn gấp hả? Vâng, vâng…"
+        }
+      ],
+      "pin_first_frame": true
+    },
+    {
+      "id": "s2",
+      "seconds": 4,
+      "action": "Still on the phone the man apologises, then lowers the phone, ends the call and sighs, looking ahead; the woman keeps looking at him.",
+      "lines": [
+        {
+          "who": "a",
+          "text": "Thì anh chờ em về công ty, em xuất cho anh nhé."
+        }
+      ],
+      "keyframe": "keyframes/s1-v1.png",
+      "pin_first_frame": false
+    },
+    {
+      "id": "s3",
+      "seconds": 4,
+      "action": "The woman turns to the man, concerned, and taps her wristwatch on the last words; the man looks at her, stressed.",
+      "lines": [
+        {
+          "who": "b",
+          "text": "Anh làm sao đấy? Giờ quay về công ty sao kịp giờ bay?"
+        }
+      ],
+      "keyframe": "keyframes/s1-v1.png",
+      "pin_first_frame": false
+    },
+    {
+      "id": "s4",
+      "seconds": 5,
+      "action": "Her face lights up with an idea; she raises her phone and shows him the screen, smiling; he leans in, eyebrows raised.",
+      "lines": [
+        {
+          "who": "b",
+          "text": "Xuất cho người ta bằng điện thoại ấy, mình có app HoaDonGo cơ mà.",
+          "say": "Xuất cho người ta bằng điện thoại ấy, mình có áp Hóa Đơn Gô cơ mà."
+        }
+      ],
+      "keyframe": "keyframes/s1-v1.png",
+      "pin_first_frame": false
+    },
+    {
+      "id": "s5",
+      "seconds": 4,
+      "action": "He slaps his forehead lightly, laughs with relief and nods, impressed; she smiles proudly.",
+      "lines": [
+        {
+          "who": "a",
+          "text": "Ừm, anh quên mất đấy, mà công nhận cái này tiện thật."
+        }
+      ],
+      "keyframe": "keyframes/s1-v1.png",
+      "pin_first_frame": false
+    },
+    {
+      "id": "s6",
+      "seconds": 6,
+      "action": "She turns to the camera, warm and friendly like a TikTok presenter, and points at the camera on the last words; he gives a thumbs-up and smiles.",
+      "lines": [
+        {
+          "who": "b",
+          "text": "Anh chị đang cần xuất hóa đơn và ký số linh hoạt, tham khảo ngay áp HoaDonGo nhé!",
+          "say": "Anh chị đang cần xuất hóa đơn và ký số linh hoạt, tham khảo ngay áp Hóa Đơn Gô nhé!"
+        }
+      ],
+      "keyframe": "keyframes/s1-v1.png",
+      "pin_first_frame": false
+    }
+  ],
+  "timeline": [
+    {
+      "shot": "s1",
+      "trim": [
+        1.0,
+        6.04
+      ]
+    },
+    {
+      "shot": "s2"
+    },
+    {
+      "shot": "s3"
+    },
+    {
+      "shot": "s4"
+    },
+    {
+      "insert": "input/demo.mp4",
+      "from": 0.0,
+      "to": 12.16,
+      "mute": true,
+      "vo": [
+        {
+          "who": "b",
+          "text": "Mở HoaDonGo lên, anh lập hóa đơn rồi ấn phát hành ngay trên điện thoại.",
+          "say": "Mở Hóa Đơn Gô lên, anh lập hóa đơn rồi ấn phát hành ngay trên điện thoại.",
+          "at": 0.0,
+          "until": 4.1
+        },
+        {
+          "who": "b",
+          "text": "Đến bước ký thì dùng chữ ký số trong app ký số từ xa luôn.",
+          "say": "Đến bước ký thì dùng chữ ký số trong áp ký số từ xa luôn.",
+          "at": 4.15,
+          "until": 7.0
+        },
+        {
+          "who": "b",
+          "text": "Không cần về văn phòng cắm USB token.",
+          "say": "Không cần về văn phòng cắm U-Ét-Bê tô-ken.",
+          "at": 7.03,
+          "until": 9.15
+        },
+        {
+          "who": "b",
+          "text": "Xong rồi vẫn theo dõi trạng thái gửi dữ liệu ngay trên hệ thống.",
+          "at": 9.19,
+          "until": 12.1
+        }
+      ]
+    },
+    {
+      "shot": "s5"
+    },
+    {
+      "card": "price",
+      "title": "86K/THÁNG",
+      "sub": "XỬ LÝ HÓA ĐƠN NHANH GỌN",
+      "seconds": 3.1,
+      "background": {
+        "shot": "s5",
+        "at": 4.1
+      },
+      "vo": [
+        {
+          "who": "b",
+          "text": "Có từ 86 nghìn một tháng mà xử lý hóa đơn nhanh gọn.",
+          "say": "Có từ tám mươi sáu nghìn một tháng mà xử lý hóa đơn nhanh gọn.",
+          "at": 0.1
+        }
+      ]
+    },
+    {
+      "shot": "s6"
+    }
+  ],
+  "overlays": [
+    {
+      "shot": "s4",
+      "image": "input/brand/product-card.png",
+      "from_word": "app",
+      "until": "end",
+      "width": 0.667,
+      "y": 0.615,
+      "caption_y": 0.52
+    },
+    {
+      "shot": "s6",
+      "image": "input/brand/product-card.png",
+      "from_word": "tham",
+      "until": "end",
+      "width": 0.667,
+      "y": 0.615,
+      "caption_y": 0.52,
+      "title": "NHẬN ƯU ĐÃI NGAY"
+    }
+  ],
+  "captions": {
+    "font": "BarlowCondensed-Black",
+    "size": 0.096,
+    "y": 0.7,
+    "max_chars": 22,
+    "upper": true
+  },
+  "burned_subtitles": {
+    "remove": false,
+    "box": [
+      0.02,
+      0.698,
+      0.96,
+      0.076
+    ]
+  },
+  "language": "vi"
+}

@@ -1,0 +1,8 @@
+# keys, caches, runtimes and per-video work stay on this machine
+local/
+projects/*
+!projects/.gitkeep
+.venv/
+__pycache__/
+*.pyc
+.env
